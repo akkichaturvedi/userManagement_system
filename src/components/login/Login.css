@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(51, 47, 47);
+    color: white;
+}
+.login,
+.register {
+  width: 25vw;
+  text-align: center;
+  padding: 8px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px 2px rgba(100 , 100 , 100 , 0.3);
+}
+
+input {
+  width: 90%;
+  padding: 8px 14px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  font-family: monospace;
+ 
+}
+button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 350px) and (max-width: 550px) {
+  .login,
+  .register {
+    width: 80vw;
+  }
+}
