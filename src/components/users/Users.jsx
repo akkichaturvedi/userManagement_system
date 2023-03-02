@@ -38,7 +38,7 @@ function Users() {
             deleteRecord(data).then(event => {
                 toast("User deleted successfully")
             })
-            
+
             getAll().then(dataFromstorage => {
                 setUserdata(dataFromstorage);
             })
@@ -57,7 +57,7 @@ function Users() {
             <h1 style={{ textAlign: "center", fontFamily: "monospace", fontSize: "30px" }}>User Listed Here</h1>
 
             {userData.map((data, indx) => {
-                if (userData.length >= 0) {
+                if (userData.length > 0) {
                     return (
                         <div key={indx}>
                             <div className="users" key={indx}>
@@ -72,6 +72,9 @@ function Users() {
                                     <h3>Number : {data.userdetails.mnumber}</h3>
                                     <h3>email : {data.userdetails.email}</h3>
                                     <h3>Address : {data.userdetails.add}</h3>
+
+                                </div>
+                                <div className="deleteButton">
                                     <button className="deleteUser"
                                         onClick={() => { deleteUsers(data.id) }}
                                     >

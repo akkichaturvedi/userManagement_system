@@ -23,18 +23,20 @@
 .userRight {
   width: 25vw;
 }
-.deleteUser{
-    position: absolute;
-    bottom: 2px;
-    right: 5px;
-    background-color: rgb(217, 35, 35);
-    color: white;
+.deleteUser {
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  background-color: rgb(217, 35, 35);
+  color: white;
 }
-@media screen and (min-width: 350px) and (max-width: 550px) {
+
+@media screen and (min-width: 310px) and (max-width: 550px) {
   .users {
     width: 80vw;
     flex-direction: column;
     padding: 5px;
+    margin-top: 30px;
   }
   .userleft {
     display: flex;
@@ -46,5 +48,9 @@
   }
   .userRight {
     width: 70vw;
+  }
+  .deleteUser {
+    bottom: -27px;
+    right: 5px;
   }
 }
